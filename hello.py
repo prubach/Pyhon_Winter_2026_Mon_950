@@ -19,3 +19,15 @@ print(f'max_int={max_int}')
 s_a = str(i_a)
 print(f'type(s_a): {type(s_a)}')
 print(f'len o s_a={len(s_a)}')
+
+i_c = 1.53697236732967936795376923769237e10
+print(f'type(i_c): {type(i_c)}')
+print(f'i_c={i_c}')
+
+h_a = 0x1f
+print(f'h_a: {h_a}')
+
+b_a = 0b1011101
+print(f'b_a: {b_a}')
+
+
