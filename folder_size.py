@@ -9,6 +9,9 @@ print(os.path.getsize(my_file))
 my_folder = 'data'
 print(os.path.getsize(my_folder))
 
+# os.path.isfile(my_folder)
+# os.path.isdir(my_folder)
+
 folder_files = os.listdir(my_folder)
 print(folder_files)
 
