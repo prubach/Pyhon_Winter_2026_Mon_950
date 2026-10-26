@@ -20,3 +20,6 @@ for key in my_currencies.keys():
 
 print('-------------------')
 print(list(my_currencies.values()))
+
+print(type(my_currencies.keys()))
+print(set(my_currencies.keys()))
