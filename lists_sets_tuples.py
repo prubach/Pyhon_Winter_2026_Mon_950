@@ -13,5 +13,19 @@ print(f'list_c={list_c}')
 list_c.insert(2, 8)
 print(f'list_c={list_c}')
 print('-' * 60)
+# remove by value - removes only first occurence
+#list_c.remove(8)
+print(f'list_c={list_c}')
+if 8 in list_c:
+    print(f' 8 is in list_c={list_c}')
+while 8 in list_c:
+    list_c.remove(8)
+print(f'list_c={list_c}')
 
+print('-' * 60)
+list_c.pop(1)
+print(f'list_c={list_c}')
+#list_c.sort()
+list_c.sort(reverse=True)
+print(f'list_c={list_c}')
 
