@@ -29,3 +29,14 @@ print(f'list_c={list_c}')
 list_c.sort(reverse=True)
 print(f'list_c={list_c}')
 
+# Tuples - are immutable - we can't change them after they are created
+tuple_a = (1, 3, 5, 7, 8, 9)
+print(f'tuple_a={tuple_a}')
+print(f'tuple_a[2]={tuple_a[2]}')
+print(f'tuple_a[2:5]={tuple_a[2:5]}')
+# tuple_a.append(3)  -
+# tuple_a.remove(3)
+# tuple_a[1] = 543
+print(f'tuple_a={tuple_a}')
+
+
