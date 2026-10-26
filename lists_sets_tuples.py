@@ -39,4 +39,20 @@ print(f'tuple_a[2:5]={tuple_a[2:5]}')
 # tuple_a[1] = 543
 print(f'tuple_a={tuple_a}')
 
-
+# Sets - unordered
+set_a = { 10, 56, 4, 7, 8, 9}
+print(f'set_a={set_a}')
+set_a = set(tuple_a)
+print(f'set_a={set_a}')
+# print(set_a[3]) - impossible
+print(f'list_c={list_c}')
+print(f'len(list_c)={len(list_c)}')
+set_c = set(list_c)
+print(f'set_c={set_c}')
+print(f'len(set_c)={len(set_c)}')
+set_c.pop()
+print(f'set_c={set_c}')
+set_c.remove(10)
+print(f'set_c={set_c}')
+set_c.add(7.5)
+print(f'set_c={set_c}')
