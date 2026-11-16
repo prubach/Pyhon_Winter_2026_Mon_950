@@ -21,7 +21,7 @@ class Account:
         self.currency = currency
 
     def __repr__(self):
-        return f"A[{self.id}, {self.customer.last_name}]"
+        return f"A[{self.id}, {self.customer.last_name}, {self.__balance}]"
 
 
 class Bank:
@@ -35,7 +35,7 @@ class Bank:
         self.cust_list.append(customer)
         return customer
 
-    def create_account(self, customer, currency):
+    def create_account(self, customer, currency = 'USD'):
         account = Account(customer, currency)
         self.acc_list.append(account)
         return account
