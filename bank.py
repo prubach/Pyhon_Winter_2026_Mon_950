@@ -23,12 +23,19 @@ class Account:
     def deposit(self, amount):
         """Add money to the account."""
         #value = self.__validate_amount(amount)
+        if amount <= 0:
+            #return False
+            raise InvalidAmountException('Invalid amount: {}'.format(amount))
         self.__balance += amount
-        return self.__balance
+        return True
 
     def charge(self, amount):
         """Charge the account."""
+        if self.__balance < amount:
+            raise NotEnoughMoneyException('Not enough balance requested/available: {}/{}'.format(amount, self.__balance))
         self.__balance -= amount
+        return True
+
         return self.__balance
 
     def __repr__(self):
@@ -55,3 +62,11 @@ class Bank:
         return f'Bank[{self.name},\n{self.cust_list}\n{self.acc_list}]'
 
 
+class BankException(Exception):
+    pass
+
+class InvalidAmountException(BankException):
+    pass
+
+class NotEnoughMoneyException(BankException):
+    pass
