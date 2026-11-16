@@ -20,6 +20,17 @@ class Account:
         self.__balance = 0
         self.currency = currency
 
+    def deposit(self, amount):
+        """Add money to the account."""
+        #value = self.__validate_amount(amount)
+        self.__balance += amount
+        return self.__balance
+
+    def charge(self, amount):
+        """Charge the account."""
+        self.__balance -= amount
+        return self.__balance
+
     def __repr__(self):
         return f"A[{self.id}, {self.customer.last_name}, {self.__balance}]"
 
